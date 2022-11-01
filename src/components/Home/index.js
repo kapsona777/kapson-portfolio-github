@@ -8,8 +8,8 @@ import Logo from './Logo';
 
 const Home = () => {
     const[letterClass,setLetterClass] = useState('text-animate');
-    const nameArray = ['a','p','s','o','n'];
-    const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r'];
+    const nameArray = ['ა','ხ','ა','ლ','ი',' ','ხ','ე','დ','ვ','ა'];
+    const jobArray = ['ს','ა','მ','ე','დ','ი','ც','ი','ნ','ო',' ','ჯ','გ','უ','ფ','ი'];
 
     useEffect(()=>{
         setTimeout(()=>{
@@ -21,12 +21,7 @@ const Home = () => {
     return (
         <div className="container home-page">
             <div className="text-zone">
-                <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i,</span>
-                    <br/>
-                    <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>  
+                <h1>  
                 <img src={LogoTitle} alt="developer" />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={nameArray}
@@ -34,9 +29,8 @@ const Home = () => {
                     <br/> 
                     <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray}
-                    idx={22}/>
-                </h1>
-                <h2>FullStack Developer</h2>
+                    idx={17}/>
+                </h1> 
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
             <Logo />
