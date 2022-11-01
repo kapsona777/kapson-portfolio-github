@@ -8,6 +8,18 @@
         max-height:90%;
     }
 
+    #upper{
+        display:flex;
+        flex-direction:row;
+        justify-content:left;
+        align-items:center;
+        gap:5px;
+    }
+
+    #lower{
+        font-size:15px;
+    }
+
     h1{
         color:#fff;
         font-size:40px;
@@ -74,7 +86,8 @@
 
         &:hover{
             background:#14699b;
-            color:#333;
+            color:#f8f9fa;
+            border:0px;
         }
     }
 }
