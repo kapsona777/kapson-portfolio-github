@@ -4,7 +4,7 @@ import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope, faWrench, faUsers, faQuestionCircle, faBlog} from '@fortawesome/free-solid-svg-icons';
-import { faFacebook , faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook , faInstagram, faLinkedin, faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 
 const Sidebar = () => (
@@ -52,18 +52,23 @@ const Sidebar = () => (
 
         <ul>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lasha-kapanadze-427544179/">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/akhalikhedva/about/">
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
                 </a>
-            </li>
+            </li> 
             <li>
-                <a target="_blank" rel="noreferrer" href="https://github.com/kapsona777">
-                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/akhalikhedva.ge/">
+                    <FontAwesomeIcon icon={faFacebook} color="#4d4d4e"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/lasha.kapannadze/">
-                    <FontAwesomeIcon icon={faFacebook} color="#4d4d4e"/>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UClPWZQ6pBJsWken3dMR6eAQ">
+                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e"/>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/akhali_khedva/">
+                    <FontAwesomeIcon icon={faInstagram} color="#4d4d4e"/>
                 </a>
             </li>
         </ul>
