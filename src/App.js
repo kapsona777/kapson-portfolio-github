@@ -8,6 +8,7 @@ import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
          </Route>
          <Route path="/contact" element={<Layout />}>
             <Route index element = {<Contact />}/>
+         </Route>
+         <Route path="/login" element={<Layout />}>
+            <Route index element = {<Login />}/>
          </Route>
      </Routes>
   );

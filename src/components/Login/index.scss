@@ -1,0 +1,99 @@
+.loginContainer{
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    .login{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+
+        h1{
+            color:#fff
+        }
+
+        form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            gap:5px;
+
+            .defaultButtons{
+                width:150px;
+                height:30px;
+                border:1px solid white;
+                border-radius:2px;
+                background-color:transparent;
+                color:white;
+                font-size:15px;
+                font-weight:600;
+                
+                &:hover{
+                    background-color:white;
+                    color:#14699b;
+                    border:1px solid #14699b;
+                    cursor:pointer;
+                }
+
+                &:active{
+                    background-color:#14699b;
+                    color:white;
+                    border:1px solid white;
+                }
+
+                
+
+
+            }
+
+            .defaultInputs{
+                width:300px;
+                height:35px;
+                padding-left:10px;
+                padding-top:5px;
+                padding-bottom:5px;
+                border:1px solid #fff;
+                border-radius:2px;  
+                margin:5px;
+                background-color:transparent;
+                color:#fff;
+                letter-spacing:3px;
+
+                &::placeholder{
+                    color:#fff;
+                    font-size:medium;
+                    letter-spacing: 3px;
+                }
+
+
+                &:focus{
+                    outline:none;
+                }
+
+                &.error{
+                    border:1px solid red;
+                }
+
+                &.success{
+                    border:1px solid green;
+                }
+
+                &.warning{
+                    border:1px solid yellow;
+                }
+
+                &.info{
+                    border:1px solid blue;
+                }
+            }
+        }
+    }
+}

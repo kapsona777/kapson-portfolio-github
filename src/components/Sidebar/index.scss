@@ -117,6 +117,12 @@
             }
         }
 
+        a.login-link{
+            &:after{
+                content:'Login';
+            }
+        }
+
         a.active{
             svg{
                 color:#14699b;
