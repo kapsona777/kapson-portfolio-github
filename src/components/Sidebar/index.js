@@ -14,7 +14,7 @@ const Sidebar = () => (
             <img className="sub-logo" src = {LogoSubtitle} alt='newVision' /> 
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/">
+            <NavLink exact="true" activeclassname="active" className="home-link" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
             </NavLink>
 
@@ -48,17 +48,17 @@ const Sidebar = () => (
 
         <ul>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://linkedin.com">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lasha-kapanadze-427544179/">
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://github.com">
+                <a target="_blank" rel="noreferrer" href="https://github.com/kapsona777">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://facebook.com">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/lasha.kapannadze/">
                     <FontAwesomeIcon icon={faFacebook} color="#4d4d4e"/>
                 </a>
             </li>
