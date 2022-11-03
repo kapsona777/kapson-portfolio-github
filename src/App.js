@@ -8,7 +8,9 @@ import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-import Login from './components/Login';
+import Login from './components/Login'; 
+import CustomerPage from './components/CustomerPage';
+
 
 function App() {
   return (
@@ -36,6 +38,9 @@ function App() {
          </Route>
          <Route path="/login" element={<Layout />}>
             <Route index element = {<Login />}/>
+         </Route>
+         <Route path="/customer" element={<Layout />}>
+            <Route index element = {<CustomerPage />}/>
          </Route>
      </Routes>
   );
