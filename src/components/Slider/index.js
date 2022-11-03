@@ -19,11 +19,15 @@ const Slider = () => {
   return (
     <div>
       <SimpleImageSlider
-        width={896}
-        height={504}
+        width={800}
+        height={300}
         images={images}
         showBullets={true}
-        showNavs={true}
+        showNavs={true} 
+        slideDuration={2} 
+        autoPlay={true}
+        autoPlayDelay={3}
+        loop={true}
       />
     </div>
   );
