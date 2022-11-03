@@ -6,7 +6,7 @@ var conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: "blockproject"
+    database: "newvision"
 });
 
 router.get("/",function(req,res,next){

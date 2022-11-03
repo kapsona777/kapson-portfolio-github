@@ -21,7 +21,7 @@
     }
 
     h1{
-        color:#fff;
+        color:#2CA3B4;
         font-size:40px;
         margin:0;
         font-family:"BPG Banner Caps";
@@ -30,7 +30,7 @@
         &::before{
             content:'';
             font-family: 'BPG Banner Caps';
-            color:#14699b;
+            color:#2CA3B4;
             font-size:18px;
             position: absolute;
             margin-top:-40px;
@@ -41,7 +41,7 @@
         &::after{
             content:'';
             font-family: 'BPG Banner Caps';
-            color:#14699b;
+            color:#2CA3B4;
             font-size:18px;
             position: absolute;
             margin-top: 70px;
@@ -71,22 +71,22 @@
     }
 
     .flat-button{
-        color:#f8f9fa;
+        color:#2CA3B4;
         font-size:13px;
         font-weight:400;
         letter-spacing:4px;
         font-family: BPG Banner Caps;
         text-decoration: none;
         padding:10px 18px;
-        border:1px solid #f8f9fa;
+        border:1px solid #2CA3B4;
         margin-top:25px;
         float:left;
         animation:fadeIn 1s 1.8s backwards;
         white-space:nowrap;
 
         &:hover{
-            background:#14699b;
-            color:#f8f9fa;
+            background:#fff;
+            color:#2CA3B4;
             border:0px;
         }
     }

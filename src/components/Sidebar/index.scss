@@ -1,15 +1,14 @@
 .nav-bar{
-    background:#f8f9fa;
-    width:80px;
-    height:100%;
-    position:absolute;
+    background:#2CA3B4;
+    width:100%;
+    height:100px; 
     // top:0;
     z-index:3;
     // min-height:500px;
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:left;
+    justify-content:center;
     gap:10px;
 
     .logo{
@@ -29,19 +28,18 @@
     }
 
     nav{
-        display:block;
-        text-align:center;
-        position:absolute;
-        height:210px;   
-        padding-top:200%;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+        gap:30px;     
         width:100%;
 
         a{
-            font-size:30px;
-            color:#4d4d4e;
-            display:block;
-            line-height:51px;
-            height:80px;
+            font-size:15px;
+            color:#ffffff;
+            display:block; 
+            height:60px;
             position:relative;
             text-decoration:none;
             
@@ -50,7 +48,7 @@
             }
 
             &:hover{
-                color:#14699b;
+                color:#f1B426;
 
                 svg{
                     opacity:0;
@@ -72,73 +70,17 @@
                 text-align: center;
                 opacity:0;
                 transition:all 0.3s ease-out;
-            }
-
-            &:first-child{
-                &:after{
-                    content:'Home';
-                }
-            }
-        }
-
-        a.about-link{
-            &:after{
-                content:'About';
-            }
-        }
-
-        a.services-link{
-            &:after{
-                content:'Services';
-            }
-        }
-
-        a.team-link{
-            &:after{
-                content:'Team';
-            }
-        }
-
-        a.faq-link{
-            &:after{
-                content:'FAQ';
-            }
-        }
-
-        a.blog-link{
-            &:after{
-                content:'Blog';
-            }
-        }
-
-        a.contact-link{
-            &:after{
-                content:'Contact';
-            }
-        }
-
-        a.login-link{
-            &:after{
-                content:'Login';
-            }
-        }
-
-        a.active{
-            svg{
-                color:#14699b;
-            }
-        }
+            } 
+        }  
     }
 
-    ul{
-        position:absolute;
-        bottom:20px;
-        width:100%;
-        display:block;
-        padding:0;
-        list-style: none;
-        text-align:center;
-        margin:0;
+    ul{  
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        gap:10px; 
+        list-style: none;  
         
 
         li{
@@ -154,4 +96,46 @@
             }
         }
     }
+}
+
+.header{
+    background:#f1b426; 
+    display:flex; 
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between; 
+    width:100%;
+    height:30px;
+    
+
+    #contactNav{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+        width:50%; 
+
+        li {
+            a {
+                font-size:15px;
+                color:#444;
+                text-decoration: none; 
+                display:flex;
+                flex-direction: row;
+                gap:8px;
+            }
+        }
+    } 
+
+    #socialNav{
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        width:10%;
+    }
+}
+
+.about-link{
+    
 }
