@@ -65,21 +65,16 @@ const Sidebar = () => (
                 <h1>მთავარი</h1>
             </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        <h1>ჩვენს შესახებ</h1>
-                    </Dropdown.Toggle> 
-                    
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="/about">ჩვენს შესახებ</Dropdown.Item>
-                        <Dropdown.Item href="/tech">ტექნოლოგიები</Dropdown.Item>
-                        <Dropdown.Item href="/gallery">გალერეა</Dropdown.Item>
-                        <Dropdown.Item href="/virtualTour">ვირტუალური ტური</Dropdown.Item>
-                        <Dropdown.Item href="/faq">FAQ</Dropdown.Item>
-
-                    </Dropdown.Menu>
-                </Dropdown>
+            <NavLink exact="true" activeclassname="active" className="about-link"  >
+                <h1 href="/about">ჩვენს შესახებ</h1>
+                <div className="dropdown-content" id="dropdown_content">
+                    <h1 href="/about">ჩვენს შესახებ</h1>
+                    <h1 href="/tech">ტექნოლოგიები</h1>
+                    <h1 href="/gallery">გალერეა</h1>
+                    <h1 href="/virtualTour">ვირტუალური<br></br>ტური</h1>
+                    <h1 href="/faq">FAQ</h1>
+                </div>
+                
             </NavLink>
 
             <NavLink exact="true" activeclassname="active" className="services-link" to="/services">
@@ -105,6 +100,6 @@ const Sidebar = () => (
             
         </nav> 
     </div>
-)
+) 
 
 export default Sidebar;
