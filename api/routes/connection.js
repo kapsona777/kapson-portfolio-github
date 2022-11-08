@@ -1,24 +1,18 @@
-var express = require('express');
-var router = express.Router();
-var mysql=require('mysql'); 
+require("dotenv").config();
+const express = require("express");
 
-var conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: "newvision"
+var mysql=require('mysql');
+
+var con = mysql.createConnection({
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
 });
 
-router.get("/",function(req,res,next){
-    conn.connect(function(err){
-        if(err) throw err;
-        conn.query("SELECT * FROM users", function(err,result,fields){
-            if(err) throw err;
-            var result = JSON.stringify(result);
-            res.send(result);
-        })
-    })
-})
+con.connect(function(err) {
+  if (err) throw err; 
+});
 
 
-module.exports=router;
+module.exports = con;

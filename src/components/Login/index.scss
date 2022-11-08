@@ -16,7 +16,7 @@
         width: 100vw;
 
         h1{
-            color:#fff
+            color:#14699b
         }
 
         form{
@@ -29,24 +29,24 @@
             .defaultButtons{
                 width:150px;
                 height:30px;
-                border:1px solid white;
+                border:1px solid #14699b;
                 border-radius:2px;
                 background-color:transparent;
-                color:white;
+                color:#14699b;
                 font-size:15px;
                 font-weight:600;
                 
                 &:hover{
-                    background-color:white;
-                    color:#14699b;
+                    background-color:#14699b;
+                    color:#fff;
                     border:1px solid #14699b;
                     cursor:pointer;
                 }
 
                 &:active{
                     background-color:#14699b;
-                    color:white;
-                    border:1px solid white;
+                    color:#14699b;
+                    border:1px solid #14699b;
                 }
 
                 
@@ -60,15 +60,15 @@
                 padding-left:10px;
                 padding-top:5px;
                 padding-bottom:5px;
-                border:1px solid #fff;
+                border:1px solid #14699b;
                 border-radius:2px;  
                 margin:5px;
                 background-color:transparent;
-                color:#fff;
+                color:#14699b;
                 letter-spacing:3px;
 
                 &::placeholder{
-                    color:#fff;
+                    color:#14699b;
                     font-size:medium;
                     letter-spacing: 3px;
                 }
