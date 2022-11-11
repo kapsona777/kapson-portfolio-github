@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+const cors = require('cors');
+const { application } = require('express');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

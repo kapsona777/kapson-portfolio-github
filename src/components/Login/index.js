@@ -10,7 +10,7 @@ const Login = () => {
     
     const LoginClick = async (e) =>{
         e.preventDefault();
-        setIsLoading(true);
+        setIsLoading(true); 
         try{
             const response = await fetch('http://localhost:9000/auth',{
                 method: 'POST',
@@ -22,26 +22,30 @@ const Login = () => {
                     username: document.getElementById('username').value,
                     password: sha256(document.getElementById('password').value)
                 })
-            }).then(req => req.text()).then(console.log);
+            }).then(req => req.text()).then(req=>{
+                console.log(req);
+                if(req === "Login Successful"){
+                    document.getElementById("result").innerText=req; 
+                    document.getElementById("result").style.color="green";
+                }else{
+                    document.getElementById("result").innerText=req; 
+                    document.getElementById("result").style.color="red";
+                }
+            });
 
             if(!response.ok){
                 throw new Error(`Error! status : ${response.status}`);
             }
 
-            const result = await response.json();
+            const result = await response.json();    
 
-            console.log("result is:", JSON.stringify(result,null,4));
-    
             setData(result);
         }catch(err){
             setErr(err.message);
         }finally{
             setIsLoading(false); 
         }
-    }
-
-    console.log(data);
-    
+    }   
 
     return (
         <div className="loginContainer">
@@ -51,6 +55,7 @@ const Login = () => {
                     <input className='defaultInputs' id="username" type="text" placeholder="Username" />
                     <input className='defaultInputs' id="password" type="password" placeholder="Password" />
                     <button onClick={LoginClick} className='defaultButtons' type='submit'>Login</button>
+                    <span id="result" style={{color: 'red'}}></span>
                 </form>
             </div>
         </div>
